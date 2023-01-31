@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PruebaTecnica_SoftTek_AlvaroLaveriano_Front';
+  IsAuthenticated = false;
+
+  constructor( ){}
+
+  ngOnInit(){
+    
+  }
 }

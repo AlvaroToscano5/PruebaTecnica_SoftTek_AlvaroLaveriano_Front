@@ -1,0 +1,22 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="https://www.softtek.com/hubfs/Softtek/images/assets/LogoCompleto-Website-20.png" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form [formGroup]="formLogin" (ngSubmit)="ngOnLogin()">
+            <input type="text" formControlName="username" class="fadeIn second" placeholder="Usuario">
+            <input type="text" formControlName="password" class="fadeIn third" placeholder="Contraseña">
+            <input type="submit" id="login" class="fadeIn fourth" value="Iniciar Sesión">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+    </div>
+</div>

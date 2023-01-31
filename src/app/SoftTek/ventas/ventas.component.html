@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="container">
+    <div class="row" id="titulo">
+      <h2>Vendedor: Alvaro Laveriano</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <h5>Ventas Realizadas:</h5>
+    <table class="table" id="tabla">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Imp. Unitario</th>
+            <th scope="col">Imp. Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let venta of ventas">
+            <th scope="row">{{ venta.producto }}</th>
+            <th scope="row">{{ venta.cantidad }}</th>
+            <th scope="row">{{ venta.impUnitario }}</th>
+            <th scope="row">{{ venta.impTotal }}</th>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
